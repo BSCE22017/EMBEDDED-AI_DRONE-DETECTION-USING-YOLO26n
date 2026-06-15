@@ -16,5 +16,5 @@ This repository contains the end-to-end source code for training, optimizing, an
 
 
 
-
+code for inference on orangepi-3 : drone.py
 The main datasets are downloaded from folloing github:https://github.com/wangdongdut/DUT-Anti-UAV
