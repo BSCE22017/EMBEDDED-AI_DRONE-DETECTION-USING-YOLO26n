@@ -33,7 +33,7 @@ input_img = cv2.resize(frame, (640, 640))
 # Convert color spacing from BGR to RGB
 input_img = cv2.cvtColor(input_img, cv2.COLOR_BGR2RGB)
 # Reorder layout from HWC to CHW and scale down pixel values to FP16 (0.0 - 1.0)
-input_img = input_img.transpose(2, 0, 1).astype(np.float32) / 255.0
+input_img = input_img.transpose(2, 0, 1).astype(np.float16) / 255.0
 # Add batch axis dimension (1, 3, 640, 640)
 input_img = np.expand_dims(input_img, axis=0)
 
